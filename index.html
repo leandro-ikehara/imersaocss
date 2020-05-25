@@ -1,22 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Leandro Ikehara</title>
-    <link rel="stylesheet" href="./css/estilos.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leandro Ikehara</title>
+  <link rel="stylesheet" href="../Imersao CSS - Alura/css/estilos.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Source+Serif+Pro:wght@400;600;700&display=swap"
+    rel="stylesheet">
+
+  <script src="https://kit.fontawesome.com/6d6952c5be.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-    <header>
-        <nav class="menu">
-          <ul>
-            <li><a href="#">Sobre</a></li>
-            <li><a href="#">Portfólio</a></li>
-            <li><a href="#">Contato</a></li>
-          </ul>
-        </nav>
-        <h1 class="site-title">Leandro I Ikehara</h1>
-        <h2 class="site-subtitle">Jr Web Developer</h2>
-      </header>
+  <header>
+    <nav class="menu">
+      <ul class="container">
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#portfolio">Estudos</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav><!--menu-->
+   
+    <div class="titulo">
+      <h1 class="site-title">Leandro I Ikehara</h1>
+      <h2 class="site-subtitle">São Paulo/SP - leandro.ikehara@gmail.com</h2>
+      <h2 class="site-subtitle">TURISMÓLOGO SR & FRONT-END DEVELOPER JR</h2>
+    </div><!--titulo-->
+  </header>
+
+  <section class="sobre container" id="sobre">
+    <h2>Sobre</h2>
+
+    <figure class="perfil">
+      <img src="https://pbs.twimg.com/profile_images/1186983374898061312/Q9aq0hxv_400x400.jpg" alt="Leandro Ikehara"
+        style="width: 250px; height: 250px;">
+    </figure><!--perfil-->
+    <p>
+      Leandro Ikehara, 37 anos, Turismólogo pela Universidade Anhembi-Morumbi, com mais de 10 anos de experiência em companhia aérea, agência de viagens e eventos, atuando em grandes multinacionais do setor.
+    </p>
+    <p>
+      Graduado em Sistemas de Informação pela Faculdade Impacta de Tecnologia, atuando em grandes multinacionais como a DuPont na área de Gestão de Projetos como analista de requisitos e desenvolver de sites Intranet com SharePoint.
+    </p>
+    <p>
+      Atualmente, aventurando-se no mundo do desenvolvimento front-end, Java, Javascript e análise de dados com Python, através das maratonas de quarentena da Alura.
+    </p>
+
+    <p>
+      Este site foi construído durante a
+      <a href="https://www.alura.com.br/imersao-css">Imersão CSS da Alura</a>.
+    </p>
+  </section><!--sobre container-->
+
+  <section class="portfolio container" id="portfolio">
+    <h2>Estudos</h2>
+
+    <div class="grid">
+
+      <div class="flip-card">
+        <div class="card">
+          <figure class="card-front">
+            <a href="https://www.alura.com.br/imersao-css">
+            <img class="img-portfolio" src="img/imersaocss2020.JPG" alt="Imersao CSS"></a>
+            <figcaption>#ImersãoCSS</figcaption>
+          </figure><!--card-front-->
+
+          <div class="card-back">
+            <h3>#ImersãoCSS</h3>
+          </div><!--card-back-->
+        </div><!--card-->
+      </div><!--flip-card-->
+
+      <div class="flip-card">
+        <div class="card">
+          <figure class="card-front">
+            <img class="img-portfolio" src="img/quarentenaDados2020.JPG" alt="Quarentena Dados">
+            <figcaption>#QuarentenaDados</figcaption>
+          </figure><!--card-front-->
+
+          <div class="card-back">
+            <h3>#QuarentenaDados</h3>
+          </div><!--card-back-->
+        </div><!--card-->
+      </div><!--flip-card-->
+
+      <div class="flip-card">
+        <div class="card">
+          <figure class="card-front">
+            <a href="https://codepen.io/leandro_ikehara/pen/abvdyxm">
+            <img class="img-portfolio" src="img/quarentenaDev2020.JPG" alt="Quarentena Dev"></a>
+            <figcaption>#QuarentenaDev</figcaption>
+          </figure><!--card-front-->
+
+          <div class="card-back">
+            <h3>#QuarentenaDev</h3>
+          </div><!--card-back-->
+        </div><!--card-->
+      </div><!--flip-card-->
+
+      <div class="flip-card">
+        <div class="card">
+          <figure class="card-front">
+            <a href="https://smartfit.com.br">
+            <img class="img-portfolio" src="./img/leandro-smart.JPG" alt="Smart Fit"></a>
+            <figcaption>Eu na Mídia</figcaption>
+          </figure><!--card-front-->
+
+          <div class="card-back">
+            <h3>Fitness Motivation</h3>
+          </div><!--card-back-->
+        </div><!--card-->
+      </div><!--flip-card-->
+
+    </div><!--grid-->
+  </section><!--portfolio container-->
+
+  <section class="contato container" id="contato">
+    <h2>Contato</h2>
+
+    <div class="grid icons">
+      <a target="_blank" href="https://github.com/leandro-ikehara">
+        <i class="fab fa-github"></i>
+      </a>
+      <a target="_blank" href="https://linkedin.com/in/leandroikehara">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a target="_blank" href="https://instagram.com/leandro_ikehara">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a target="_blank" href="https://api.whatsapp.com/send?phone=5511979818689&text=Olá,%20se%20chegou%20até%20aqui,%20mande%20um%20oi!">
+        <i class="fab fa-whatsapp"></i>
+      </a>
+    </div><!--grid icons-->
+  </section><!--contato container-->
+
+  <footer>
+    <div class="creditos">
+      <p>2020 © Diapa | Site desenvolvido durante a  <a href="https://www.alura.com.br/imersao-css">Imersão CSS</a> da Alura.
+      </p>
+    </div><!--creditos-->
+  </footer>
+
 </body>
 </html>
